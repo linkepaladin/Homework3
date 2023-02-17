@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
     public static void task1() {
         byte a = 10;
@@ -41,5 +42,20 @@ public class Main {
         short paper = 480;
         int listPupil = paper / (lpClass + asClass + eaClass);
         System.out.println("На каждого ученика рассчитано " + listPupil + " листов бумаги");
+    }
+    public static void task4() {
+        byte bottle = 16;
+        byte min = 2;
+        int bottlePerMin = bottle / min;
+        int minDay = 60 * 24;
+        int minMonth = minDay * 30;
+        int bottleMin20 = bottlePerMin * 20;
+        int bottleMinDay = bottlePerMin * minDay;
+        int bottleMinDay3 = bottlePerMin * minDay * 3;
+        int bottleMinMonth = bottlePerMin * minMonth;
+        System.out.println("За двадцать минут машина произвела " + bottleMin20 + " штук бутылок");
+        System.out.println("За один день машина произвела " + bottleMinDay + " штук бутылок");
+        System.out.println("За три дня машина произвела " + bottleMinDay3 + " штук бутылок");
+        System.out.println("За один месяц машина произвела " + bottleMinMonth + " штук бутылок");
     }
 }
