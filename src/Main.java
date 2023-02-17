@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
     public static void task1() {
         byte a = 10;
@@ -50,9 +51,11 @@ public class Main {
         int bottlePerMin = bottle / min;
         int minDay = 60 * 24;
         int minMonth = minDay * 30;
-        int bottleMin = bottlePerMin * 20;
+        byte days = 3;
+        byte mins = 20;
+        int bottleMin = bottlePerMin * mins;
         int bottleMinDay = bottlePerMin * minDay;
-        int bottleMinDays = bottlePerMin * minDay * 3;
+        int bottleMinDays = bottlePerMin * minDay * days;
         int bottleMinMonth = bottlePerMin * minMonth;
         System.out.println("За двадцать минут машина произвела " + bottleMin + " штук бутылок");
         System.out.println("За один день машина произвела " + bottleMinDay + " штук бутылок");
@@ -68,6 +71,16 @@ public class Main {
         int jarBrown = classAll * jarBrownClass;
         System.out.println("В школе, где " + classAll + " классов, нужно " + jarWhite + " банок белой краски и " +
                 jarBrown + " банок коричневой краски.");
-
+    }
+    public static void task6() {
+        byte banana1 = 80;
+        byte milk100 = 105;
+        byte icecream1 = 100;
+        byte egg1 = 70;
+        int breakfastGr = 5 * banana1 + 2 * milk100 + 2 * icecream1 + 4 * egg1;
+        System.out.println("Вес завтрака составляет " + breakfastGr + " граммов");
+        float grPerKg = 1000.000f;
+        float kgPerBreakfast = breakfastGr / grPerKg;
+        System.out.println("Вес завтрака составляет " + kgPerBreakfast + " килограмм");
     }
 }
