@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
     public static void task1() {
         byte a = 10;
@@ -95,5 +96,11 @@ public class Main {
         System.out.println("Максимальное количество дней для похудения " + perMaxDays + " дней");
         int perMidDays = (perMaxDays + perMinDays) / 2;
         System.out.println("В среднем может потребоваться для похудения " + perMidDays + " день");
+    }
+    public static void task8() {
+        int mashaZPerMonth = 67760;
+        int denisZPerMonth = 83690;
+        int kristinaZPerMonth = 76230;
+
     }
 }
