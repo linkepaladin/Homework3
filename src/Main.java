@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
     public static void task1() {
         byte a = 10;
@@ -82,5 +83,17 @@ public class Main {
         float grPerKg = 1000.000f;
         float kgPerBreakfast = breakfastGr / grPerKg;
         System.out.println("Вес завтрака составляет " + kgPerBreakfast + " килограмм");
+    }
+    public static void task7() {
+        byte allKg = 7;
+        int allKgPerGr = allKg * 1000;
+        short minGr = 250;
+        short maxGr = 500;
+        int perMinDays = allKgPerGr / maxGr;
+        System.out.println("Минимальное количество дней для похудения " + perMinDays + " дней");
+        int perMaxDays = allKgPerGr / minGr;
+        System.out.println("Максимальное количество дней для похудения " + perMaxDays + " дней");
+        int perMidDays = (perMaxDays + perMinDays) / 2;
+        System.out.println("В среднем может потребоваться для похудения " + perMidDays + " день");
     }
 }
