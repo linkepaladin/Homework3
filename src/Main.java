@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
     public static void task1() {
         byte a = 10;
@@ -49,13 +50,24 @@ public class Main {
         int bottlePerMin = bottle / min;
         int minDay = 60 * 24;
         int minMonth = minDay * 30;
-        int bottleMin20 = bottlePerMin * 20;
+        int bottleMin = bottlePerMin * 20;
         int bottleMinDay = bottlePerMin * minDay;
-        int bottleMinDay3 = bottlePerMin * minDay * 3;
+        int bottleMinDays = bottlePerMin * minDay * 3;
         int bottleMinMonth = bottlePerMin * minMonth;
-        System.out.println("За двадцать минут машина произвела " + bottleMin20 + " штук бутылок");
+        System.out.println("За двадцать минут машина произвела " + bottleMin + " штук бутылок");
         System.out.println("За один день машина произвела " + bottleMinDay + " штук бутылок");
-        System.out.println("За три дня машина произвела " + bottleMinDay3 + " штук бутылок");
+        System.out.println("За три дня машина произвела " + bottleMinDays + " штук бутылок");
         System.out.println("За один месяц машина произвела " + bottleMinMonth + " штук бутылок");
+    }
+    public static void task5() {
+        byte jarAll = 120;
+        byte jarWhiteClass = 2;
+        byte jarBrownClass = 4;
+        int classAll = jarAll / (jarWhiteClass + jarBrownClass);
+        int jarWhite = classAll * jarWhiteClass;
+        int jarBrown = classAll * jarBrownClass;
+        System.out.println("В школе, где " + classAll + " классов, нужно " + jarWhite + " банок белой краски и " +
+                jarBrown + " банок коричневой краски.");
+
     }
 }
