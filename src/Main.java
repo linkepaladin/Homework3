@@ -101,6 +101,23 @@ public class Main {
         int mashaZPerMonth = 67760;
         int denisZPerMonth = 83690;
         int kristinaZPerMonth = 76230;
+        float zpUp = 0.1f;
+        int mashaUpZp = (int) (mashaZPerMonth + mashaZPerMonth * zpUp);
+        int denisUpZp = (int) (denisZPerMonth + denisZPerMonth * zpUp);
+        int kristinaUpZp = (int) (kristinaZPerMonth + kristinaZPerMonth *zpUp);
+        byte year = 12;
+        int mashaYear = mashaZPerMonth * year;
+        int denisYear = denisZPerMonth * year;
+        int kristinaYear = kristinaZPerMonth * year;
+        int mashaYearUp = mashaUpZp * year;
+        int denisYearUp = denisUpZp * year;
+        int kristinaYearUp = kristinaUpZp * year;
+        int mashaD = mashaYearUp - mashaYear;
+        int denisD = denisYearUp - denisYear;
+        int kristinaD = kristinaYearUp - kristinaYear;
+        System.out.println("Маша теперь получает " + mashaUpZp + " рублей, годовой доход вырос на " + mashaD + " рублей");
+        System.out.println("Денис теперь получает " + denisUpZp + " рублей, годовой доход вырос на " + denisD + " рублей");
+        System.out.println("Кристина теперь получает " + kristinaUpZp + " рублей, годовой доход вырос на " + kristinaD + " рублей");
 
     }
 }
