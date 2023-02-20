@@ -94,8 +94,9 @@ public class Main {
         System.out.println("Минимальное количество дней для похудения " + perMinDays + " дней");
         int perMaxDays = allKgPerGr / minGr;
         System.out.println("Максимальное количество дней для похудения " + perMaxDays + " дней");
-        int perMidDays = (perMaxDays + perMinDays) / 2;
-        System.out.println("В среднем может потребоваться для похудения " + perMidDays + " день");
+        int avgGr = (maxGr + minGr) / 2;
+        int perAvgDays = allKgPerGr / avgGr;
+        System.out.println("В среднем может потребоваться для похудения " + perAvgDays + " дней");
     }
     public static void task8() {
         int mashaZPerMonth = 67760;
