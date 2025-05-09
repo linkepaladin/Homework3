@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -6,7 +8,9 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
+
     public static void task1() {
         int age = 17;
         if (age >= 18) {
@@ -15,7 +19,8 @@ public class Main {
             System.out.println("Человек не достиг совершеннолетия, надо немного подождать");
         }
     }
-    public static void  task2() {
+
+    public static void task2() {
         int temp = 3;
         if (temp > 5) {
             System.out.println("На улице " + temp + " градусов, можно идти без шапки");
@@ -24,6 +29,7 @@ public class Main {
             System.out.println("На улице " + temp + " градусов, нужно надеть шапку");
         }
     }
+
     public static void task3() {
         int speed = 61;
         if (speed > 60) {
@@ -34,6 +40,7 @@ public class Main {
             }
         }
     }
+
     public static void task4() {
         int age = 1;
         boolean ageBaby = age >= 2 && age <= 6;
@@ -53,6 +60,7 @@ public class Main {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить на работу");
         }
     }
+
     public static void task5() {
         int age = 13;
         boolean age1 = age < 5;
@@ -68,6 +76,7 @@ public class Main {
             System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционах");
         }
     }
+
     public static void task6() {
         int wagonTotalSeats = 102;
         int seatingSeats = 60;
@@ -81,6 +90,37 @@ public class Main {
             System.out.println("В вагоне осталось 0 сидячих мест и " + standingSeats + " стоячих мест");
         } else if (passengersEnteredTheTrainCar >= wagonTotalSeats) {
             System.out.println("Вагон переполнен");
+        }
+    }
+
+    public static void task7() {
+        int one = 1;
+        int two = 0;
+        int three = 1;
+        if (one > two) {
+            if (one > three) {
+                System.out.println(one);
+            } else if (one < three) {
+                System.out.println(three);
+            } else {
+                System.out.println("Первое и третье числа равны " + one + " и " + three);
+            }
+        } else if (one < two) {
+            if (three < two) {
+                System.out.println(two);
+            } else if (three > two) {
+                System.out.println(three);
+            } else {
+                System.out.println("Второе и третье числа равны " + two + " и " + three);
+            }
+        } else if (one == two) {
+            if (three > one) {
+                System.out.println(three);
+            } else if (three < one) {
+                System.out.println("Первое и второе числа ранвны " + one + " и " + two);
+            } else {
+                System.out.println("Все три числа равны");
+            }
         }
     }
 }
